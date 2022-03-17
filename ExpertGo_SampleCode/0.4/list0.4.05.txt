@@ -1,0 +1,9 @@
+func oldFunc() error {
+	// return newFuncWithContext(nil) ←やってはいけない例
+	ctx := context.TODO()
+	return newFuncWithContext(ctx)
+}
+
+func newFuncWithContext(ctx context.Context) error {
+	// 何らかの処理
+}
